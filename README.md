@@ -1,21 +1,18 @@
 # HotelCRM per Windows
 
-[**Scarica l'ultima versione**](https://github.com/Ic3b3rg/hotel-CRM-installer/releases/latest)
+[**Scarica l’ultima versione**](https://github.com/Ic3b3rg/hotel-CRM-installer/releases/latest)
 
-Questo repository distribuisce gli installer e i pacchetti di aggiornamento di HotelCRM per Windows x64. Il codice sorgente è mantenuto in un repository privato separato.
+HotelCRM si usa aprendo direttamente **HotelCRM-Portable-X.Y.Z-x64.exe**. Gli aggiornamenti sono manuali. L’app Windows x64 viene distribuita senza firma; il codice sorgente rimane in un repository privato separato.
 
-## Quale file scaricare
+## Avvio e aggiornamento
 
-- **HotelCRM-Setup-X.Y.Z-x64.exe**: versione consigliata. Installa l'app e abilita gli aggiornamenti dalla sidebar.
-- **HotelCRM-Portable-X.Y.Z-x64.exe**: versione senza installer, da aggiornare manualmente.
-- **latest.yml** ed eventuali **blockmap**: file tecnici usati dall'app durante l'aggiornamento.
+1. Chiudi la vecchia copia di HotelCRM e annulla l’eventuale Setup aperto.
+2. Copia l’intera cartella `%APPDATA%\hotel-crm-desktop` come backup, verificando la presenza di `hotel-crm.db`. Conserva anche `attachments` e gli eventuali file SQLite associati copiando tutta la cartella. Se il database non è presente, individua il profilo effettivamente usato prima di proseguire.
+3. Scarica il file **HotelCRM-Portable-X.Y.Z-x64.exe** dalla release attuale e aprilo direttamente.
+4. Verifica contatti, note e allegati; conserva il backup. Per le prossime versioni, chiudi l’app e scarica il nuovo eseguibile.
 
-## Primo aggiornamento
+I dati rimangono nel profilo dell’utente sullo stesso computer. Non occorre spostare il database accanto all’EXE, disinstallare l’app o cancellare cartelle di dati. Apri una sola copia di HotelCRM alla volta.
 
-Se usi una versione precedente alla 1.2.0, installa il nuovo Setup una prima volta. I dati già salvati rimangono sul computer.
+## Versioni precedenti
 
-Dalla versione 1.2.0 il pulsante sopra la versione nella sidebar permette di cercare gli aggiornamenti, scaricarli con l'avanzamento e scegliere quando riavviare per installarli. Il controllo avviene anche all'avvio. Il download e il riavvio richiedono un'azione dell'utente.
-
-## Dati locali
-
-Contatti, note e trattative sono nel database locale di ciascun computer. L'app continua a funzionare offline; Internet serve per controllare e scaricare gli aggiornamenti. In questo repository vengono pubblicati solo i pacchetti e le note di rilascio.
+Dalla 1.2.2 la distribuzione Windows contiene soltanto il portable. I vecchi Setup rimangono nelle release storiche; per l’uso attuale scegli il file Portable. L’app continua a funzionare offline: Internet serve per scaricare manualmente nuove versioni.
